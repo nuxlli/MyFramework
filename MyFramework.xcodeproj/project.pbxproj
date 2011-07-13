@@ -6,17 +6,82 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		F642C44113CD2528000E0B6B /* iOS-Framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F642C44413CD2528000E0B6B /* Build configuration list for PBXAggregateTarget "iOS-Framework" */;
+			buildPhases = (
+				F642C44713CD2604000E0B6B /* Build architecture-specific static libs */,
+				F642C44813CD2607000E0B6B /* Build framework package */,
+				F642C44913CD260E000E0B6B /* Copy headers to framework */,
+			);
+			dependencies = (
+			);
+			name = "iOS-Framework";
+			productName = "iOS-Framework";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
+		F642C45813CD276B000E0B6B /* MyLog.h in Copy headers to framework */ = {isa = PBXBuildFile; fileRef = F6E9A1E413C8F6BB004F3793 /* MyLog.h */; };
+		F642C46013CD27EB000E0B6B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F642C45F13CD27EB000E0B6B /* UIKit.framework */; };
+		F642C46113CD27EB000E0B6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E9A1DA13C8F695004F3793 /* Foundation.framework */; };
+		F642C46313CD27EB000E0B6B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F642C46213CD27EB000E0B6B /* CoreGraphics.framework */; };
+		F642C46913CD27EB000E0B6B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F642C46713CD27EB000E0B6B /* InfoPlist.strings */; };
+		F642C46C13CD27EB000E0B6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F642C46B13CD27EB000E0B6B /* main.m */; };
+		F642C46F13CD27EB000E0B6B /* TestMyFrameworkAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F642C46E13CD27EB000E0B6B /* TestMyFrameworkAppDelegate.m */; };
+		F642C47213CD27EB000E0B6B /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F642C47013CD27EB000E0B6B /* MainWindow.xib */; };
+		F642C47713CD2802000E0B6B /* MyFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F642C47613CD2802000E0B6B /* MyFramework.framework */; };
 		F6E9A1DB13C8F695004F3793 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E9A1DA13C8F695004F3793 /* Foundation.framework */; };
+		F6E9A1E613C8F6BB004F3793 /* MyLog.h in Headers */ = {isa = PBXBuildFile; fileRef = F6E9A1E413C8F6BB004F3793 /* MyLog.h */; };
+		F6E9A1E713C8F6BB004F3793 /* MyLog.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E9A1E513C8F6BB004F3793 /* MyLog.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F642C44913CD260E000E0B6B /* Copy headers to framework */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "${FRAMEWORK_DIR}/Headers";
+			dstSubfolderSpec = 0;
+			files = (
+				F642C45813CD276B000E0B6B /* MyLog.h in Copy headers to framework */,
+			);
+			name = "Copy headers to framework";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		F642C45D13CD27EB000E0B6B /* TestMyFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestMyFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F642C45F13CD27EB000E0B6B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F642C46213CD27EB000E0B6B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F642C46613CD27EB000E0B6B /* TestMyFramework-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestMyFramework-Info.plist"; sourceTree = "<group>"; };
+		F642C46813CD27EB000E0B6B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F642C46A13CD27EB000E0B6B /* TestMyFramework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestMyFramework-Prefix.pch"; sourceTree = "<group>"; };
+		F642C46B13CD27EB000E0B6B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F642C46D13CD27EB000E0B6B /* TestMyFrameworkAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestMyFrameworkAppDelegate.h; sourceTree = "<group>"; };
+		F642C46E13CD27EB000E0B6B /* TestMyFrameworkAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestMyFrameworkAppDelegate.m; sourceTree = "<group>"; };
+		F642C47113CD27EB000E0B6B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		F642C47613CD2802000E0B6B /* MyFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MyFramework.framework; sourceTree = "<group>"; };
 		F6E9A1D713C8F695004F3793 /* libMyFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMyFramework.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6E9A1DA13C8F695004F3793 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		F6E9A1DE13C8F695004F3793 /* MyFramework-Prefix.pch */ = {isa = PBXFileReference; path = "MyFramework-Prefix.pch"; sourceTree = "<group>"; };
+		F6E9A1DE13C8F695004F3793 /* MyFramework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyFramework-Prefix.pch"; sourceTree = "<group>"; };
+		F6E9A1E413C8F6BB004F3793 /* MyLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLog.h; sourceTree = "<group>"; };
+		F6E9A1E513C8F6BB004F3793 /* MyLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F642C45A13CD27EB000E0B6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F642C47713CD2802000E0B6B /* MyFramework.framework in Frameworks */,
+				F642C46013CD27EB000E0B6B /* UIKit.framework in Frameworks */,
+				F642C46113CD27EB000E0B6B /* Foundation.framework in Frameworks */,
+				F642C46313CD27EB000E0B6B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F6E9A1D413C8F695004F3793 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -28,10 +93,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F642C46413CD27EB000E0B6B /* TestMyFramework */ = {
+			isa = PBXGroup;
+			children = (
+				F642C46D13CD27EB000E0B6B /* TestMyFrameworkAppDelegate.h */,
+				F642C46E13CD27EB000E0B6B /* TestMyFrameworkAppDelegate.m */,
+				F642C47013CD27EB000E0B6B /* MainWindow.xib */,
+				F642C46513CD27EB000E0B6B /* Supporting Files */,
+			);
+			path = TestMyFramework;
+			sourceTree = "<group>";
+		};
+		F642C46513CD27EB000E0B6B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F642C46613CD27EB000E0B6B /* TestMyFramework-Info.plist */,
+				F642C46713CD27EB000E0B6B /* InfoPlist.strings */,
+				F642C46A13CD27EB000E0B6B /* TestMyFramework-Prefix.pch */,
+				F642C46B13CD27EB000E0B6B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		F6E9A1CC13C8F695004F3793 = {
 			isa = PBXGroup;
 			children = (
 				F6E9A1DC13C8F695004F3793 /* MyFramework */,
+				F642C46413CD27EB000E0B6B /* TestMyFramework */,
 				F6E9A1D913C8F695004F3793 /* Frameworks */,
 				F6E9A1D813C8F695004F3793 /* Products */,
 			);
@@ -41,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				F6E9A1D713C8F695004F3793 /* libMyFramework.a */,
+				F642C45D13CD27EB000E0B6B /* TestMyFramework.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,7 +137,10 @@
 		F6E9A1D913C8F695004F3793 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F642C47613CD2802000E0B6B /* MyFramework.framework */,
 				F6E9A1DA13C8F695004F3793 /* Foundation.framework */,
+				F642C45F13CD27EB000E0B6B /* UIKit.framework */,
+				F642C46213CD27EB000E0B6B /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -57,6 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				F6E9A1DD13C8F695004F3793 /* Supporting Files */,
+				F6E9A1E413C8F6BB004F3793 /* MyLog.h */,
+				F6E9A1E513C8F6BB004F3793 /* MyLog.m */,
 			);
 			path = MyFramework;
 			sourceTree = "<group>";
@@ -76,12 +170,30 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6E9A1E613C8F6BB004F3793 /* MyLog.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		F642C45C13CD27EB000E0B6B /* TestMyFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F642C47313CD27EB000E0B6B /* Build configuration list for PBXNativeTarget "TestMyFramework" */;
+			buildPhases = (
+				F642C45913CD27EB000E0B6B /* Sources */,
+				F642C45A13CD27EB000E0B6B /* Frameworks */,
+				F642C45B13CD27EB000E0B6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestMyFramework;
+			productName = TestMyFramework;
+			productReference = F642C45D13CD27EB000E0B6B /* TestMyFramework.app */;
+			productType = "com.apple.product-type.application";
+		};
 		F6E9A1D613C8F695004F3793 /* MyFramework */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6E9A1E113C8F695004F3793 /* Build configuration list for PBXNativeTarget "MyFramework" */;
@@ -120,21 +232,152 @@
 			projectRoot = "";
 			targets = (
 				F6E9A1D613C8F695004F3793 /* MyFramework */,
+				F642C44113CD2528000E0B6B /* iOS-Framework */,
+				F642C45C13CD27EB000E0B6B /* TestMyFramework */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		F642C45B13CD27EB000E0B6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F642C46913CD27EB000E0B6B /* InfoPlist.strings in Resources */,
+				F642C47213CD27EB000E0B6B /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F642C44713CD2604000E0B6B /* Build architecture-specific static libs */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build architecture-specific static libs";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "xcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphonesimulator -target ${STATIC_TARGET_NAME} -configuration ${CONFIGURATION} clean build SYMROOT=${SYMROOT}\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphoneos -target ${STATIC_TARGET_NAME} -configuration ${CONFIGURATION} clean build SYMROOT=${SYMROOT}";
+		};
+		F642C44813CD2607000E0B6B /* Build framework package */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build framework package";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Variables\nLIBRARY_NAME_PATH=\"lib${STATIC_TARGET_NAME}.a\" &&\nDEVICE_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${LIBRARY_NAME_PATH}\" &&\nSIMULATOR_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${LIBRARY_NAME_PATH}\" &&\nUNIVERSAL_LIBRARY_PATH=\"${FRAMEWORK_DIR}/Versions/A/${PRODUCT_NAME}\"\n\n# Create framework directory structure.\nrm -rf   \"${FRAMEWORK_DIR}\" &&\nmkdir -p \"${FRAMEWORK_DIR}/Versions/A/Headers\" &&\nmkdir -p \"${FRAMEWORK_DIR}/Versions/A/Resources\" &&\n\n# Generate universal binary from desktop, device, and simulator builds.\nlipo \"${SIMULATOR_LIBRARY_PATH}\" \"${DEVICE_LIBRARY_PATH}\" -create -output \"${UNIVERSAL_LIBRARY_PATH}\" &&\n\n# Move files to appropriate locations in framework paths.\ncd \"${FRAMEWORK_DIR}/Versions\" &&\nln -s \"A\" \"Current\" &&\n\ncd \"${FRAMEWORK_DIR}\" &&\nln -s \"Versions/Current/Headers\" \"Headers\" &&\nln -s \"Versions/Current/Resources\" \"Resources\" &&\nln -s \"Versions/Current/${PRODUCT_NAME}\" \"${PRODUCT_NAME}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		F642C45913CD27EB000E0B6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F642C46C13CD27EB000E0B6B /* main.m in Sources */,
+				F642C46F13CD27EB000E0B6B /* TestMyFrameworkAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F6E9A1D313C8F695004F3793 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6E9A1E713C8F6BB004F3793 /* MyLog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		F642C46713CD27EB000E0B6B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F642C46813CD27EB000E0B6B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F642C47013CD27EB000E0B6B /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F642C47113CD27EB000E0B6B /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		F642C44213CD2528000E0B6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_DIR = "${PROJECT_DIR}/${PRODUCT_NAME}.framework";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				STATIC_TARGET_NAME = "${PRODUCT_NAME}";
+			};
+			name = Debug;
+		};
+		F642C44313CD2528000E0B6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_DIR = "${PROJECT_DIR}/${PRODUCT_NAME}.framework";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				STATIC_TARGET_NAME = "${PRODUCT_NAME}";
+			};
+			name = Release;
+		};
+		F642C47413CD27EB000E0B6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestMyFramework/TestMyFramework-Prefix.pch";
+				INFOPLIST_FILE = "TestMyFramework/TestMyFramework-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F642C47513CD27EB000E0B6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestMyFramework/TestMyFramework-Prefix.pch";
+				INFOPLIST_FILE = "TestMyFramework/TestMyFramework-Info.plist";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		F6E9A1DF13C8F695004F3793 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -191,6 +434,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F642C44413CD2528000E0B6B /* Build configuration list for PBXAggregateTarget "iOS-Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F642C44213CD2528000E0B6B /* Debug */,
+				F642C44313CD2528000E0B6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F642C47313CD27EB000E0B6B /* Build configuration list for PBXNativeTarget "TestMyFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F642C47413CD27EB000E0B6B /* Debug */,
+				F642C47513CD27EB000E0B6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		F6E9A1D113C8F695004F3793 /* Build configuration list for PBXProject "MyFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -207,6 +466,7 @@
 				F6E9A1E313C8F695004F3793 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
